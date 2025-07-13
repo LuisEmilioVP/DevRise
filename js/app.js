@@ -64,3 +64,17 @@ style.textContent = `
             }
         `;
 document.head.appendChild(style);
+
+// Toggle ecosystem content
+function toggleEcosystem(ecosystemNum) {
+	const content = document.getElementById(`content${ecosystemNum}`);
+	const icon = document.getElementById(`toggle${ecosystemNum}`);
+
+	if (content.classList.contains('active')) {
+		content.classList.remove('active');
+		icon.classList.remove('rotated');
+	} else {
+		content.classList.add('active');
+		icon.classList.add('rotated');
+	}
+}

@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>DevRise - Plan Dev</title>
+		<link rel="stylesheet" href="../css/dev.css" />
+	</head>
+	<body>
+		<div class="container-title">
+			<div class="logo pulse">DevRise</div>
+			<div class="tagline">De principiante a desarrollador</div>
+		</div>
+
+		<div class="container">
+			<div class="header">
+				<h1>🚀 Plan Definitivo de Programación 2025</h1>
+				<p class="subtitle">6 Meses Intensivos: De Intermedio a Empleable</p>
+				<div class="strategy-box">
+					<h3>🎯 Estrategia de Empleabilidad Garantizada</h3>
+					<p>
+						<strong>Objetivo:</strong> 20 horas semanales → Empleabilidad
+						Backend/Full-Stack
+					</p>
+					<p>
+						<strong>Stack Principal:</strong> C#/.NET + SQL + Frontend + DevOps +
+						Inglés Técnico
+					</p>
+					<p>
+						<strong>Resultado:</strong> Portfolio completo + Skills para empleos
+						Junior/Mid-level
+					</p>
+				</div>
+			</div>
+
+			<div class="timeline-overview">
+				<h2>📅 Cronograma de 6 Meses</h2>
+				<div class="timeline-grid">
+					<div class="timeline-item">
+						<h4>Mes 1-2</h4>
+						<p>Fundamentos Sólidos</p>
+						<small>C# + POO + SQL Básico</small>
+					</div>
+					<div class="timeline-item">
+						<h4>Mes 3-4</h4>
+						<p>Backend Avanzado</p>
+						<small>ASP.NET + EF + Auth</small>
+					</div>
+					<div class="timeline-item">
+						<h4>Mes 5-6</h4>
+						<p>Full-Stack + Deploy</p>
+						<small>Frontend + DevOps + Portfolio</small>
+					</div>
+				</div>
+			</div>
+
+			<div class="weekly-hours">
+				<h2>⏰ Distribución Semanal: 20 Horas</h2>
+				<div class="hours-breakdown">
+					<div class="hour-item">
+						<strong>🔷 Backend C#/.NET</strong><br />
+						8 horas/semana
+					</div>
+					<div class="hour-item">
+						<strong>🗄️ SQL y Bases de Datos</strong><br />
+						4 horas/semana
+					</div>
+					<div class="hour-item">
+						<strong>🌐 Frontend + DevOps</strong><br />
+						5 horas/semana
+					</div>
+					<div class="hour-item">
+						<strong>🇺🇸 Inglés Técnico</strong><br />
+						3 horas/semana (diario)
+					</div>
+				</div>
+			</div>
+
+			<div class="progress-tracker">
+				<h2>📊 Tu Progreso hacia la Empleabilidad</h2>
+				<div class="progress-bar">
+					<div class="progress-fill" id="overall-progress"></div>
+				</div>
+				<p id="progress-text">0% Completado - ¡Comienza tu transformación!</p>
+			</div>
+
+			<div class="ecosystems">
+				<div class="ecosystem">
+					<div
+						class="ecosystem-header english-ecosystem"
+						onclick="toggleEcosystem(1)"
+					>
+						🇺🇸 Inglés Técnico (Transversal - 6 meses)
+						<span class="toggle-icon" id="toggle1">▼</span>
+					</div>
+					<div class="ecosystem-content" id="content1">
+						<div class="english-tip">
+							<span class="tip-icon">💡</span>
+							<strong>Actividad diaria:</strong> 30 min/día es clave para el éxito
+							profesional
+						</div>
+
+						<h4>🎯 Objetivo: Comunicación técnica fluida</h4>
+
+						<div class="checklist">
+							<h4>✅ Actividades Semanales</h4>
+							<div class="checklist-item">
+								<input type="checkbox" onchange="updateProgress()" />
+								<span>3 sesiones Duolingo/Papora (30 min c/u)</span>
+							</div>
+							<div class="checklist-item">
+								<input type="checkbox" onchange="updateProgress()" />
+								<span>2 videos técnicos en inglés (FreeCodeCamp, CS50)</span>
+							</div>
+							<div class="checklist-item">
+								<input type="checkbox" onchange="updateProgress()" />
+								<span>1 artículo técnico (dev.to, roadmap.sh, MDN)</span>
+							</div>
+							<div class="checklist-item">
+								<input type="checkbox" onchange="updateProgress()" />
+								<span>Glosario personal: 10 palabras técnicas nuevas</span>
+							</div>
+							<div class="checklist-item">
+								<input type="checkbox" onchange="updateProgress()" />
+								<span>Configurar IDE y documentación en inglés</span>
+							</div>
+						</div>
+
+						<div class="project-highlight">
+							<strong>🚀 Recurso Premium:</strong> FreeCodeCamp English for
+							Developers
+						</div>
+					</div>
+				</div>
+
+				<div class="ecosystem">
+					<div
+						class="ecosystem-header backend-ecosystem"
+						onclick="toggleEcosystem(2)"
+					>
+						🔷 Backend C#/.NET Core (Foco Principal)
+						<span class="toggle-icon" id="toggle2">▼</span>
+					</div>
+					<div class="ecosystem-content" id="content2">
+						<div class="month-container">
+							<div class="month-header">📅 Mes 1: Fundamentos C# y POO</div>
+							<div class="month-content">
+								<p><strong>Objetivos:</strong></p>
+								<ul>
+									<li>Sintaxis C# 12 (variables, tipos, condicionales, ciclos)</li>
+									<li>POO: clases, métodos, herencia, interfaces</li>
+									<li>Visual Studio y .NET 8 SDK setup</li>
+								</ul>
+								<div class="tech-stack">
+									<span class="tech-tag">C# 12</span>
+									<span class="tech-tag">.NET 8</span>
+									<span class="tech-tag">Visual Studio</span>
+									<span class="tech-tag">OOP</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="month-container">
+							<div class="month-header">📅 Mes 2: ASP.NET Core + Web APIs</div>
+							<div class="month-content">
+								<p><strong>Objetivos:</strong></p>
+								<ul>
+									<li>Estructura MVC y Web API</li>
+									<li>Rutas, controladores, middleware</li>
+									<li>Consumo APIs con Postman</li>
+								</ul>
+								<div class="project-highlight">
+									<strong>🎯 Proyecto:</strong> Mini API de Tareas (CRUD completo)
+								</div>
+							</div>
+						</div>
+
+						<div class="month-container">
+							<div class="month-header">📅 Mes 3: Entity Framework + Seguridad</div>
+							<div class="month-content">
+								<p><strong>Objetivos:</strong></p>
+								<ul>
+									<li>EF Core: migraciones, relaciones, LINQ</li>
+									<li>Authentication con Identity y JWT</li>
+									<li>Middleware y manejo de errores</li>
+								</ul>
+								<div class="project-highlight">
+									<strong>🎯 Proyecto:</strong> API Protegida de Usuarios y Tareas
+								</div>
+							</div>
+						</div>
+
+						<div class="month-container">
+							<div class="month-header">📅 Mes 4: Arquitectura Avanzada</div>
+							<div class="month-content">
+								<p><strong>Objetivos:</strong></p>
+								<ul>
+									<li>Repository Pattern, Unit of Work</li>
+									<li>Clean Architecture con .NET</li>
+									<li>CQRS y MediatR (opcional)</li>
+								</ul>
+								<div class="project-highlight">
+									<strong>🎯 Proyecto:</strong> App de Inventario Multiusuario
+								</div>
+							</div>
+						</div>
+
+						<div class="checklist">
+							<h4>✅ Checklist Backend Completo</h4>
+							<div class="checklist-item">
+								<input type="checkbox" onchange="updateProgress()" />
+								<span>Dominar C# 12 y .NET 8 fundamentals</span>
+							</div>
+							<div class="checklist-item">
+								<input type="checkbox" onchange="updateProgress()" />
+								<span>Crear APIs REST completas con ASP.NET Core</span>
+							</div>
+							<div class="checklist-item">
+								<input type="checkbox" onchange="updateProgress()" />
+								<span>Implementar Entity Framework Core</span>
+							</div>
+							<div class="checklist-item">
+								<input type="checkbox" onchange="updateProgress()" />
+								<span>Configurar Authentication y Authorization</span>
+							</div>
+							<div class="checklist-item">
+								<input type="checkbox" onchange="updateProgress()" />
+								<span>Aplicar Clean Architecture patterns</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="ecosystems">
+				<div class="ecosystem">
+					<div class="ecosystem-header sql-ecosystem" onclick="toggleEcosystem(3)">
+						🗄️ SQL y Administración de BD
+						<span class="toggle-icon" id="toggle3">▼</span>
+					</div>
+					<div class="ecosystem-content" id="content3">
+						<div class="month-container">
+							<div class="month-header">📅 Mes 1-2: Fundamentos SQL</div>
+							<div class="month-content">
+								<ul>
+									<li>SELECT, INSERT, UPDATE, DELETE</li>
+									<li>JOINs, subconsultas, funciones agregadas</li>
+									<li>SQL Server y PostgreSQL</li>
+								</ul>
+								<div class="tech-stack">
+									<span class="tech-tag">SQL Server</span>
+									<span class="tech-tag">PostgreSQL</span>
+									<span class="tech-tag">SSMS</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="month-container">
+							<div class="month-header">📅 Mes 3-4: Modelado y Normalización</div>
+							<div class="month-content">
+								<ul>
+									<li>Modelos relacionales</li>
+									<li>Esquemas y relaciones</li>
+									<li>Vistas, stored procedures, índices</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="month-container">
+							<div class="month-header">📅 Mes 5-6: Administración Cloud</div>
+							<div class="month-content">
+								<ul>
+									<li>Backups, roles y permisos</li>
+									<li>Optimización de consultas</li>
+									<li>Azure SQL y PostgreSQL cloud</li>
+								</ul>
+								<div class="project-highlight">
+									<strong>🎯 Proyecto Final:</strong> BD para Sistema Contable con
+									Reportes
+								</div>
+							</div>
+						</div>
+
+						<div class="checklist">
+							<h4>✅ Checklist SQL</h4>
+							<div class="checklist-item">
+								<input type="checkbox" onchange="updateProgress()" />
+								<span>Dominar consultas SQL complejas</span>
+							</div>
+							<div class="checklist-item">
+								<input type="checkbox" onchange="updateProgress()" />
+								<span>Diseñar bases de datos normalizadas</span>
+							</div>
+							<div class="checklist-item">
+								<input type="checkbox" onchange="updateProgress()" />
+								<span>Optimizar rendimiento de consultas</span>
+							</div>
+							<div class="checklist-item">
+								<input type="checkbox" onchange="updateProgress()" />
+								<span>Administrar BD en la nube</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="ecosystem">
+					<div
+						class="ecosystem-header frontend-ecosystem"
+						onclick="toggleEcosystem(4)"
+					>
+						🌐 Frontend y DevOps
+						<span class="toggle-icon" id="toggle4">▼</span>
+					</div>
+					<div class="ecosystem-content" id="content4">
+						<div class="month-container">
+							<div class="month-header">📅 Mes 1-2: Fundamentos Web</div>
+							<div class="month-content">
+								<ul>
+									<li>HTML5, CSS3, JavaScript moderno</li>
+									<li>DOM, eventos, formularios</li>
+									<li>Responsive design</li>
+								</ul>
+								<div class="project-highlight">
+									<strong>🎯 Proyecto:</strong> Landing Page de Producto
+								</div>
+							</div>
+						</div>
+
+						<div class="month-container">
+							<div class="month-header">📅 Mes 3-4: React + API Integration</div>
+							<div class="month-content">
+								<ul>
+									<li>React: componentes, hooks, estado</li>
+									<li>Consumo de APIs y CRUD</li>
+									<li>Routing y state management</li>
+								</ul>
+								<div class="project-highlight">
+									<strong>🎯 Proyecto:</strong> Dashboard que consume tu API .NET
+								</div>
+							</div>
+						</div>
+
+						<div class="month-container">
+							<div class="month-header">📅 Mes 5-6: DevOps y Deploy</div>
+							<div class="month-content">
+								<ul>
+									<li>Git avanzado, GitHub, PRs</li>
+									<li>CI/CD con GitHub Actions</li>
+									<li>Docker containers</li>
+									<li>Deploy en Azure/Heroku</li>
+								</ul>
+								<div class="project-highlight">
+									<strong>🎯 Proyecto Final:</strong> App Full-Stack Desplegada
+								</div>
+							</div>
+						</div>
+
+						<div class="checklist">
+							<h4>✅ Checklist Frontend + DevOps</h4>
+							<div class="checklist-item">
+								<input type="checkbox" onchange="updateProgress()" />
+								<span>Crear interfaces responsive modernas</span>
+							</div>
+							<div class="checklist-item">
+								<input type="checkbox" onchange="updateProgress()" />
+								<span>Dominar React y consumo de APIs</span>
+							</div>
+							<div class="checklist-item">
+								<input type="checkbox" onchange="updateProgress()" />
+								<span>Implementar CI/CD pipelines</span>
+							</div>
+							<div class="checklist-item">
+								<input type="checkbox" onchange="updateProgress()" />
+								<span>Desplegar aplicaciones en producción</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="weekly-schedule">
+				<div class="schedule-header">
+					<h2>📋 Cronograma Semanal Detallado</h2>
+				</div>
+				<table class="schedule-table">
+					<thead>
+						<tr>
+							<th>Semanas</th>
+							<th>Backend (8h)</th>
+							<th>SQL (4h)</th>
+							<th>Frontend (5h)</th>
+							<th>DevOps/Inglés (3h)</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><strong>1-4</strong></td>
+							<td>C# y POO</td>
+							<td>SQL básico</td>
+							<td>HTML/CSS/JS</td>
+							<td>Inglés técnico diario</td>
+						</tr>
+						<tr>
+							<td><strong>5-8</strong></td>
+							<td>ASP.NET Core API</td>
+							<td>SQL avanzado</td>
+							<td>JavaScript/React</td>
+							<td>Git y GitHub</td>
+						</tr>
+						<tr>
+							<td><strong>9-12</strong></td>
+							<td>EF Core + Auth</td>
+							<td>Admin BD + Views</td>
+							<td>React avanzado</td>
+							<td>Docker + CI/CD</td>
+						</tr>
+						<tr>
+							<td><strong>13-16</strong></td>
+							<td>Clean Architecture</td>
+							<td>BD Cloud/Azure</td>
+							<td>Integración API</td>
+							<td>Deploy + Proyecto final</td>
+						</tr>
+						<tr>
+							<td><strong>17-20</strong></td>
+							<td>Arquitectura avanzada</td>
+							<td>Optimización</td>
+							<td>Dashboard completo</td>
+							<td>Portfolio + CV</td>
+						</tr>
+						<tr>
+							<td><strong>21-24</strong></td>
+							<td>Proyecto Enterprise</td>
+							<td>Reportes avanzados</td>
+							<td>Deploy frontend</td>
+							<td>Job Applications</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="resources">
+				<h2>📚 Recursos Clave 2025</h2>
+				<div class="resource-grid">
+					<div class="resource-category">
+						<h4>🔷 .NET Resources</h4>
+						<ul>
+							<li>Microsoft Learn</li>
+							<li>EDteam C# desde cero</li>
+							<li>NetUniversity</li>
+							<li>Tim Corey (YouTube)</li>
+						</ul>
+					</div>
+					<div class="resource-category">
+						<h4>🗄️ SQL Resources</h4>
+						<ul>
+							<li>SQL Server Management Studio</li>
+							<li>PostgreSQL + pgAdmin</li>
+							<li>HackerRank SQL</li>
+							<li>SQLBolt (interactive)</li>
+						</ul>
+					</div>
+					<div class="resource-category">
+						<h4>🌐 Frontend Resources</h4>
+						<ul>
+							<li>FreeCodeCamp</li>
+							<li>React Official Docs</li>
+							<li>MDN Web Docs</li>
+							<li>The Odin Project</li>
+						</ul>
+					</div>
+					<div class="resource-category">
+						<h4>🇺🇸 English Resources</h4>
+						<ul>
+							<li>FreeCodeCamp English for Developers</li>
+							<li>BBC Learning English</li>
+							<li>EnglishClass101 (YouTube)</li>
+							<li>Technical vocabulary flashcards</li>
+						</ul>
+					</div>
+					<div class="resource-category">
+						<h4>🛠️ DevOps Resources</h4>
+						<ul>
+							<li>GitHub Actions docs</li>
+							<li>Docker Hub tutorials</li>
+							<li>Azure Free Account</li>
+							<li>Heroku deployment guides</li>
+						</ul>
+					</div>
+					<div class="resource-category">
+						<h4>📖 Essential Reading</h4>
+						<ul>
+							<li>roadmap.sh</li>
+							<li>C# in Depth (Jon Skeet)</li>
+							<li>Clean Code (Robert Martin)</li>
+							<li>You Don't Know JS series</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="final-outcomes">
+				<h2>🎯 Resultados Esperados al Finalizar</h2>
+				<p style="text-align: center; font-size: 1.2em; margin-bottom: 20px">
+					<strong>Al completar estos 6 meses serás capaz de:</strong>
+				</p>
+				<div class="outcomes-grid">
+					<div class="outcome-item">
+						<strong>🔷 Backend Expert</strong><br />
+						Crear aplicaciones completas con ASP.NET Core y EF Core
+					</div>
+					<div class="outcome-item">
+						<strong>🗄️ Database Pro</strong><br />
+						Administrar y desplegar bases de datos SQL en la nube
+					</div>
+					<div class="outcome-item">
+						<strong>🌐 Frontend Capable</strong><br />
+						Crear interfaces funcionales y consumir APIs
+					</div>
+					<div class="outcome-item">
+						<strong>🚀 DevOps Ready</strong><br />
+						Desplegar aplicaciones y usar CI/CD básico
+					</div>
+					<div class="outcome-item">
+						<strong>🇺🇸 Technical English</strong><br />
+						Entender y comunicarte en inglés técnico
+					</div>
+					<div class="outcome-item">
+						<strong>💼 Job Ready</strong><br />
+						Postularte a empleos como Backend/Full-Stack Junior
+					</div>
+				</div>
+
+				<div
+					style="
+						margin-top: 30px;
+						padding: 25px;
+						background: rgba(255, 255, 255, 0.9);
+						border-radius: 15px;
+						text-align: center;
+					"
+				>
+					<h3 style="color: #2c3e50; margin-bottom: 15px">🚀 Posiciones Target</h3>
+					<div
+						style="
+							display: grid;
+							grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+							gap: 15px;
+						"
+					>
+						<div
+							style="
+								background: #3498db;
+								color: white;
+								padding: 15px;
+								border-radius: 8px;
+							"
+						>
+							<strong>Backend Developer Junior</strong>
+						</div>
+						<div
+							style="
+								background: #e74c3c;
+								color: white;
+								padding: 15px;
+								border-radius: 8px;
+							"
+						>
+							<strong>Full-Stack Developer Junior</strong>
+						</div>
+						<div
+							style="
+								background: #27ae60;
+								color: white;
+								padding: 15px;
+								border-radius: 8px;
+							"
+						>
+							<strong>DBA Junior</strong>
+						</div>
+						<div
+							style="
+								background: #f39c12;
+								color: white;
+								padding: 15px;
+								border-radius: 8px;
+							"
+						>
+							<strong>Soporte Técnico</strong>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div
+				style="
+					background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+					color: white;
+					padding: 30px;
+					margin: 20px;
+					border-radius: 15px;
+					text-align: center;
+				"
+			>
+				<h2>💡 Consejos para el Éxito</h2>
+				<div
+					style="
+						display: grid;
+						grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+						gap: 20px;
+						margin-top: 20px;
+					"
+				>
+					<div
+						style="
+							background: rgba(255, 255, 255, 0.2);
+							padding: 20px;
+							border-radius: 10px;
+						"
+					>
+						<h4>🎯 Consistencia</h4>
+						<p>20 horas semanales distribuidas es mejor que 40 horas en 2 días</p>
+					</div>
+					<div
+						style="
+							background: rgba(255, 255, 255, 0.2);
+							padding: 20px;
+							border-radius: 10px;
+						"
+					>
+						<h4>🔄 Práctica</h4>
+						<p>Cada concepto debe ser aplicado inmediatamente en un mini-proyecto</p>
+					</div>
+					<div
+						style="
+							background: rgba(255, 255, 255, 0.2);
+							padding: 20px;
+							border-radius: 10px;
+						"
+					>
+						<h4>🌐 Networking</h4>
+						<p>Únete a comunidades, publica tu progreso, haz conexiones</p>
+					</div>
+					<div
+						style="
+							background: rgba(255, 255, 255, 0.2);
+							padding: 20px;
+							border-radius: 10px;
+						"
+					>
+						<h4>📝 Portfolio</h4>
+						<p>Documenta cada proyecto en GitHub con README detallado</p>
+					</div>
+				</div>
+			</div>
+
+			<div
+				style="
+					background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+					color: white;
+					padding: 30px;
+					margin: 20px;
+					border-radius: 15px;
+					text-align: center;
+				"
+			>
+				<h2>🏁 Plan de Acción Inmediato</h2>
+				<div
+					style="
+						display: grid;
+						grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+						gap: 20px;
+						margin-top: 20px;
+					"
+				>
+					<div
+						style="
+							background: rgba(255, 255, 255, 0.2);
+							padding: 20px;
+							border-radius: 10px;
+						"
+					>
+						<h4>Semana 1</h4>
+						<ul style="list-style: none; padding: 0">
+							<li>✅ Setup .NET 8 SDK</li>
+							<li>✅ Instalar Visual Studio</li>
+							<li>✅ Crear primer "Hello World"</li>
+							<li>✅ Configurar GitHub</li>
+						</ul>
+					</div>
+					<div
+						style="
+							background: rgba(255, 255, 255, 0.2);
+							padding: 20px;
+							border-radius: 10px;
+						"
+					>
+						<h4>Semana 2</h4>
+						<ul style="list-style: none; padding: 0">
+							<li>✅ Variables y tipos C#</li>
+							<li>✅ Control structures</li>
+							<li>✅ Primera clase simple</li>
+							<li>✅ SQL Server setup</li>
+						</ul>
+					</div>
+					<div
+						style="
+							background: rgba(255, 255, 255, 0.2);
+							padding: 20px;
+							border-radius: 10px;
+						"
+					>
+						<h4>Semana 3</h4>
+						<ul style="list-style: none; padding: 0">
+							<li>✅ POO: herencia</li>
+							<li>✅ Interfaces básicas</li>
+							<li>✅ Consultas SQL SELECT</li>
+							<li>✅ Inglés: 10 palabras técnicas</li>
+						</ul>
+					</div>
+					<div
+						style="
+							background: rgba(255, 255, 255, 0.2);
+							padding: 20px;
+							border-radius: 10px;
+						"
+					>
+						<h4>Semana 4</h4>
+						<ul style="list-style: none; padding: 0">
+							<li>✅ Collections y LINQ</li>
+							<li>✅ Manejo de excepciones</li>
+							<li>✅ CRUD SQL completo</li>
+							<li>✅ Primer mini-proyecto</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="../js/dev.js"></script>
+	</body>
+</html>

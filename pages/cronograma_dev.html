@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>DevRise - Cronograma de Estudios .NET</title>
+		<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+		<link rel="stylesheet" href="../css/cronograma_dev.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<h1>🚀 DevRise - Cronograma .NET</h1>
+				<p class="subtitle">Plan Intensivo: 5 Meses de 0 a Desarrollador .NET</p>
+			</div>
+
+			<!-- Authentication Section -->
+			<div class="auth-container" id="authContainer">
+				<div class="auth-form">
+					<h2 style="text-align: center; margin-bottom: 30px; color: #2c3e50">
+						Accede a tu Plan Personalizado
+					</h2>
+
+					<div id="loginForm">
+						<div class="form-group">
+							<label for="email">Email</label>
+							<input type="email" id="email" placeholder="tu@email.com" required />
+						</div>
+						<div class="form-group">
+							<label for="password">Contraseña</label>
+							<input type="password" id="password" placeholder="••••••••" required />
+						</div>
+						<button class="btn" onclick="signIn()">Iniciar Sesión</button>
+						<button class="btn btn-secondary" onclick="toggleAuthMode()">
+							¿No tienes cuenta? Regístrate
+						</button>
+					</div>
+
+					<div id="signupForm" style="display: none">
+						<div class="form-group">
+							<label for="signupEmail">Email</label>
+							<input
+								type="email"
+								id="signupEmail"
+								placeholder="tu@email.com"
+								required
+							/>
+						</div>
+						<div class="form-group">
+							<label for="signupPassword">Contraseña</label>
+							<input
+								type="password"
+								id="signupPassword"
+								placeholder="••••••••"
+								required
+							/>
+						</div>
+						<div class="form-group">
+							<label for="fullName">Nombre Completo</label>
+							<input type="text" id="fullName" placeholder="Juan Pérez" required />
+						</div>
+						<button class="btn" onclick="signUp()">Crear Cuenta</button>
+						<button class="btn btn-secondary" onclick="toggleAuthMode()">
+							¿Ya tienes cuenta? Inicia sesión
+						</button>
+					</div>
+				</div>
+			</div>
+
+			<!-- Main Content -->
+			<div class="main-content" id="mainContent">
+				<div class="dashboard">
+					<!-- Sidebar -->
+					<div class="sidebar">
+						<div class="user-info">
+							<h3 id="userName">Usuario</h3>
+							<p>Plan: .NET Developer</p>
+							<button
+								class="btn"
+								onclick="signOut()"
+								style="margin-top: 15px; padding: 8px 20px; font-size: 0.9em"
+							>
+								Cerrar Sesión
+							</button>
+						</div>
+
+						<div class="progress-section">
+							<h4>Progreso General</h4>
+							<div class="progress-bar">
+								<div class="progress-fill" id="overallProgress"></div>
+							</div>
+							<p id="progressText">0% Completado</p>
+						</div>
+
+						<div class="schedule-config">
+							<h3>⚙️ Configuración</h3>
+
+							<div class="config-group">
+								<label>Horas por día</label>
+								<select id="hoursPerDay" onchange="updateSchedule()">
+									<option value="1">1 hora</option>
+									<option value="2" selected>2 horas</option>
+									<option value="3">3 horas</option>
+									<option value="4">4 horas</option>
+								</select>
+							</div>
+
+							<div class="config-group">
+								<label>Días de estudio</label>
+								<div class="days-selector">
+									<div class="day-checkbox">
+										<input
+											type="checkbox"
+											id="mon"
+											checked
+											onchange="updateSchedule()"
+										/>
+										<label for="mon">Lun</label>
+									</div>
+									<div class="day-checkbox">
+										<input
+											type="checkbox"
+											id="tue"
+											checked
+											onchange="updateSchedule()"
+										/>
+										<label for="tue">Mar</label>
+									</div>
+									<div class="day-checkbox">
+										<input
+											type="checkbox"
+											id="wed"
+											checked
+											onchange="updateSchedule()"
+										/>
+										<label for="wed">Mié</label>
+									</div>
+									<div class="day-checkbox">
+										<input
+											type="checkbox"
+											id="thu"
+											checked
+											onchange="updateSchedule()"
+										/>
+										<label for="thu">Jue</label>
+									</div>
+									<div class="day-checkbox">
+										<input
+											type="checkbox"
+											id="fri"
+											checked
+											onchange="updateSchedule()"
+										/>
+										<label for="fri">Vie</label>
+									</div>
+									<div class="day-checkbox">
+										<input
+											type="checkbox"
+											id="sat"
+											checked
+											onchange="updateSchedule()"
+										/>
+										<label for="sat">Sáb</label>
+									</div>
+								</div>
+							</div>
+
+							<div class="config-group">
+								<label>Fecha de inicio</label>
+								<input type="date" id="startDate" onchange="updateSchedule()" />
+							</div>
+
+							<button
+								class="btn"
+								onclick="saveConfiguration()"
+								style="margin-top: 15px"
+							>
+								Guardar Configuración
+							</button>
+						</div>
+					</div>
+
+					<!-- Main Schedule Content -->
+					<div class="schedule-content">
+						<div class="month-tabs">
+							<button class="month-tab active" onclick="showMonth(1)">
+								Mes 1: C# Fundamentos
+							</button>
+							<button class="month-tab" onclick="showMonth(2)">
+								Mes 2: ASP.NET MVC
+							</button>
+							<button class="month-tab" onclick="showMonth(3)">
+								Mes 3: EF Core
+							</button>
+							<button class="month-tab" onclick="showMonth(4)">
+								Mes 4: SQL Server
+							</button>
+							<button class="month-tab" onclick="showMonth(5)">
+								Mes 5: Proyecto Final
+							</button>
+						</div>
+
+						<div id="scheduleContainer">
+							<div class="loading">
+								<div class="spinner"></div>
+								Generando tu cronograma personalizado...
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Floating Actions -->
+			<div class="floating-actions">
+				<button
+					class="floating-btn"
+					onclick="syncProgress()"
+					title="Sincronizar Progreso"
+				>
+					🔄
+				</button>
+				<button
+					class="floating-btn"
+					onclick="exportSchedule()"
+					title="Exportar Cronograma"
+				>
+					📥
+				</button>
+			</div>
+
+			<!-- Notification -->
+			<div class="notification" id="notification"></div>
+		</div>
+	</body>
+</html>
